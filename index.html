@@ -9,3 +9,85 @@
     <p>Пофарбуйте мене в зелений колір (color:green).</p>
     <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
   </div>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад уроків</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .day {
+            padding: 10px;
+            border-radius: 10px;
+            width: 18%;
+            list-style-type: none;
+        }
+        .day li {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .monday { background-color: #ff9999; }
+        .tuesday { background-color: #ffcc99; }
+        .wednesday { background-color: #ffff99; }
+        .thursday { background-color: #99ff99; }
+        .friday { background-color: #99ccff; }
+        li:hover { background-color: #ddd; cursor: pointer; }
+        li:active { background-color: #bbb; }
+        li:focus { outline: 2px solid blue; }
+        li:visited { color: purple; }
+        li:target { background-color: yellow; }
+        li:first-child { font-weight: bold; }
+        li:last-child { font-style: italic; }
+        li:nth-child(odd) { background-color: rgba(255, 255, 255, 0.7); }
+        li:nth-child(even) { background-color: rgba(0, 0, 0, 0.1); }
+        li:not(:last-child) { border-bottom: 1px solid #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="day monday">
+            <li>Математика</li>
+            <li>Українська мова</li>
+            <li>Історія</li>
+            <li>Фізика</li>
+            <li>Географія</li>
+        </ul>
+        <ul class="day tuesday">
+            <li>Біологія</li>
+            <li>Хімія</li>
+            <li>Література</li>
+            <li>Англійська мова</li>
+            <li>Фізкультура</li>
+        </ul>
+        <ul class="day wednesday">
+            <li>Математика</li>
+            <li>Інформатика</li>
+            <li>Хімія</li>
+            <li>Історія</li>
+            <li>Музика</li>
+        </ul>
+        <ul class="day thursday">
+            <li>Фізика</li>
+            <li>Українська мова</li>
+            <li>Географія</li>
+            <li>Трудове навчання</li>
+            <li>Образотворче мистецтво</li>
+        </ul>
+        <ul class="day friday">
+            <li>Література</li>
+            <li>Англійська мова</li>
+            <li>Фізика</li>
+            <li>Математика</li>
+            <li>Фізкультура</li>
+        </ul>
+    </div>
+</body>
